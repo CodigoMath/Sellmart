@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #F8F8F8;
+  z-index: -2;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-topo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 16px 0;
+  max-width: 1216px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icon {
+  display: none;
+}
+
+.barra-pesquisa {
+  position: relative;
+  width: 608px;
+}
+
+#txtBusca {
+  width: 100%;
+  height: 48px;
+  padding: 15px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #F0F2F5;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* pointer-events: none; */
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #AAAAAA;
+}
+
+.links-header {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+@media screen and (max-width: 944px) {
+  .header-topo {
+    padding: 0 16px;
+  }
+
+  .links-header {
+    gap: 0;
+  }
+
+  .profile-icon, .curtida-icon {
+    display: none;
+  }
+
+  .barra-pesquisa {
+    width: 100%;
+    order: 2;
+  }
+}
+
+/*
+.todos-cards {
+  max-width: 1216px;
+  width: 100%;
+  height: 436px;
+  background-color: aqua;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 268px 268px 268px 268px;
+  gap: 16px;
+  justify-content: center;
+} 
+
+.card {
+  background-color: white;
+  width: 268px;
+  height: 436px;
+  padding: 8px 16px 6px 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.frete {
+  width: 124px;
+  height: 32px;
+  background-color: #fd4848;
+  position: absolute;
+  left: 0;
+  border-radius: 0 3px 3px 0;
+  z-index: 2;
+  padding-left: 14px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.card p {
+  width: 236px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+
+.link-produto a {
+  text-decoration: none;
+  color: black;
+}
+
+.monitor, .monitor, .monitor, .monitor {
+  margin-bottom: 12px;
+}
+
+.valor {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fd4848;
+  margin-bottom: 8px;
+  margin-top: 24px;
+  
+}
+
+.forma-pgt {
+  font-size: 12px;
+  font-weight: normal;
+  color: #808080;
+}
+
+#btnCarrinho {
+  width: 236px;
+  height: 40px;
+  padding: 12px 44px;
+  border-radius: 4px;
+  border: 1px solid #fd4848;
+  color: #fd4848;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 34px;
+}
+
+.btnSeta {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 1px solid #999;
+  background-color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+/* .todos-cards {
+  margin-top: 32px;
+  height: 436px;
+  margin-bottom: 104px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+} 
+
+.cards {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.btnSeta {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 1px solid #999;
+  background-color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.frete {
+  width: 124px;
+  height: 32px;
+  background-color: #fd4848;
+  position: absolute;
+  left: 0;
+  border-radius: 0 3px 3px 0;
+  z-index: 2;
+  padding-left: 14px;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+  background-color: white;
+  width: 268px;
+  height: 436px;
+  padding: 8px 16px 6px 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-1 p, .card-2 p, .card-3 p, .card-4 p {
+  width: 236px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+
+.link-produto a {
+  text-decoration: none;
+  color: black;
+}
+
+.monitor, .monitor, .monitor, .monitor {
+  margin-bottom: 12px;
+}
+
+.valor {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fd4848;
+  margin-bottom: 8px;
+  margin-top: 24px;
+  
+}
+
+.forma-pgt {
+  font-size: 12px;
+  font-weight: normal;
+  color: #808080;
+}
+
+#btnCarrinho {
+  width: 236px;
+  height: 40px;
+  padding: 12px 44px;
+  border-radius: 4px;
+  border: 1px solid #fd4848;
+  color: #fd4848;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 34px;
+}*/
+
+@media screen and (max-width: 1144px) {
+  .card:nth-child(n+5) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .card:nth-child(n+4) {
+    display: none;
+  }
+
+  .icon {
+    width: 18px;
+  height: 2px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  background-color: black;
+  border-radius: 100px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card:nth-child(n+3) {
+    display: none;
+  }
+
+}
+
+

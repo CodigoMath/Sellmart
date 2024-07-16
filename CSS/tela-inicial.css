@@ -1,0 +1,661 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #F8F8F8;
+    z-index: -2;
+}
+
+.header-topo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 16px 0;
+    max-width: 1216px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .icon {
+    display: none;
+  }
+  
+  .barra-pesquisa {
+    position: relative;
+    width: 608px;
+  }
+  
+  #txtBusca {
+    width: 100%;
+    height: 48px;
+    padding: 15px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e0e0e0;
+    /* background-color: #F0F2F5; */
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* pointer-events: none; */
+    cursor: pointer;
+  }
+  
+  ::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #AAAAAA;
+  }
+  
+  .links-header {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
+
+/* .header-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 16px 0;
+    max-width: 1216px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.icon {
+    display: none;
+}
+
+.barra-pesquisa {
+    position: relative;
+    width: 608px;
+}
+
+#txtBusca {
+    width: 100%;
+    height: 48px;
+    padding: 15px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #F0F2F5;
+    font-size: 16px;
+    outline: none;
+} 
+
+.search-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #AAAAAA;
+}
+
+.links-header {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+} */
+
+hr {
+    width: 100%;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #D9D9D9;
+}
+
+.menu-superior {
+    width: 100%;
+    height: 40px;
+}
+
+.menu-superior-botoes {
+    max-width: 1216px;
+    height: 40px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+
+.nav-menu, .nav-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.nav-menu a:hover {
+    background-color: #fd4848;
+    color: white;
+}
+
+#btnCategorias {
+    width: 216px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+}
+
+button {
+    background-color: #f8f8f8;
+}
+
+.selected {
+    background-color: #fd4848;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#categorias {
+    background-color: white;
+    width: 524px;
+    height: 448px;
+    z-index: 2;
+    position: absolute;
+    top: 121px;
+    left: 359px;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 262px 262px;
+}
+
+ul li {
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    max-width: 262px;
+    height: 32px;
+    padding-left: 8px
+}
+
+.nav-menu a:hover {
+    background-color: #fd4848;
+    color: white;
+}
+
+/* .btnCategorias span {
+    margin-left: 8px;
+    margin-right: 32px;
+}
+
+.btnCategorias img {
+    width: 16px;
+    height: 12px;
+} */
+
+.barra-separacao-menu {
+    width: 1px;
+    height: 20px;
+    background-color: #d9d9d9;
+}
+
+.nav-menu a {
+    padding: 0 12px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    height: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img-carrossel {
+    margin-bottom: 32px;
+}
+
+.img-carrossel img {
+    width: 100%;
+}
+
+#text-promocoes {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.todos-cards {
+    max-width: 1216px;
+    width: 100%;
+    height: 436px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: 268px 268px 268px 268px; */
+    gap: 16px;
+    justify-content: center;
+} 
+
+.card {
+    background-color: white;
+    width: 268px;
+    height: 436px;
+    padding: 8px 16px 6px 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.frete {
+    width: 124px;
+    height: 32px;
+    background-color: #fd4848;
+    position: absolute;
+    left: 0;
+    border-radius: 0 3px 3px 0;
+    z-index: 2;
+    padding-left: 14px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+  
+.card p {
+    width: 236px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+  
+.link-produto a {
+    text-decoration: none;
+    color: black;
+}
+  
+.monitor, .monitor, .monitor, .monitor {
+    margin-bottom: 12px;
+}
+  
+.valor {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fd4848;
+    margin-bottom: 8px;
+    margin-top: 24px;
+    
+}
+  
+.forma-pgt {
+    font-size: 12px;
+    font-weight: normal;
+    color: #808080;
+}
+  
+#btnCarrinho {
+    width: 236px;
+    height: 40px;
+    padding: 12px 44px;
+    border-radius: 4px;
+    border: 1px solid #fd4848;
+    color: #fd4848;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 34px;
+}
+  
+.btnSeta {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid #999;
+    background-color: white;
+    font-size: 16px;
+    margin: auto 0;
+}
+
+/* estilo secundario */
+
+/* .todos-cards {
+    margin-top: 32px;
+    height: 436px;
+    margin-bottom: 104px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+}
+
+.cards {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+} 
+
+.btnSeta {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid #999;
+    background-color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    
+}
+
+.frete {
+    width: 124px;
+    height: 32px;
+    background-color: #fd4848;
+    position: absolute;
+    left: 0;
+    border-radius: 0 3px 3px 0;
+    z-index: 2;
+    padding-left: 14px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+    background-color: white;
+    width: 268px;
+    height: 436px;
+    padding: 8px 16px 6px 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-1 p, .card-2 p, .card-3 p, .card-4 p {
+    width: 236px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+
+.link-produto a {
+    text-decoration: none;
+    color: black;
+}
+
+.monitor, .monitor, .monitor, .monitor {
+    margin-bottom: 12px;
+}
+
+.valor {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fd4848;
+    margin-bottom: 8px;
+    margin-top: 24px;
+    
+}
+
+.forma-pgt {
+    font-size: 12px;
+    font-weight: normal;
+    color: #808080;
+}
+
+#btnCarrinho {
+    width: 236px;
+    height: 40px;
+    padding: 12px 44px;
+    border-radius: 4px;
+    border: 1px solid #fd4848;
+    color: #fd4848;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 34px;
+} */
+
+/* estilo original */
+
+/* .todos-cards {
+    margin-top: 32px;
+    height: 436px;
+    margin-bottom: 104px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+}
+
+.cards {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.btnSeta {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid #999;
+    background-color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    
+}
+
+.frete {
+    width: 124px;
+    height: 32px;
+    background-color: #fd4848;
+    position: absolute;
+    left: 0;
+    border-radius: 0 3px 3px 0;
+    z-index: 2;
+    padding-left: 14px;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+    background-color: white;
+    width: 268px;
+    height: 436px;
+    padding: 8px 16px 6px 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-1 p, .card-2 p, .card-3 p, .card-4 p {
+    width: 236px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+}
+
+.link-produto a {
+    text-decoration: none;
+    color: black;
+}
+
+.monitor, .monitor, .monitor, .monitor {
+    margin-bottom: 12px;
+}
+
+.valor {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fd4848;
+    margin-bottom: 8px;
+    margin-top: 24px;
+    
+}
+
+.forma-pgt {
+    font-size: 12px;
+    font-weight: normal;
+    color: #808080;
+}
+
+#btnCarrinho {
+    width: 236px;
+    height: 40px;
+    padding: 12px 44px;
+    border-radius: 4px;
+    border: 1px solid #fd4848;
+    color: #fd4848;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 34px;
+}
+
+@media screen and (max-width: 1233px) {
+    .nav-menu a {
+        font-size: 14px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} */
+
+@media screen and (max-width: 1216px){
+    html {
+        padding: 0 16px;
+    }
+    
+    .nav-menu a {
+        display: none;
+      }
+
+    #btnCategorias {
+        display: none;
+    }
+    
+    .barra-separacao-menu {
+        display: none;
+    }
+
+    .icon {
+        width: 18px;
+        height: 2px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4px;
+        background-color: black;
+        border-radius: 100px;
+    }
+
+    .barra-pesquisa {
+        width: 100%;
+        margin-top: 16px;
+        order: 2;
+    }
+
+    .profile-icon, .curtida-icon {
+        display: none;
+    }
+
+    .links-header {
+        gap: 0;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 944px) {
+    .header-topo {
+      padding: 0 16px;
+    }
+  
+    .links-header {
+      gap: 0;
+    }
+  
+    .profile-icon, .curtida-icon {
+      display: none;
+    }
+  
+    .barra-pesquisa {
+      width: 100%;
+      order: 2;
+    }
+  }
+
+@media screen and (max-width: 860px) {
+  .card:nth-child(n+4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        padding: 16px 16px;
+    }
+  }
+
+@media screen and (max-width: 576px) {
+  .card:nth-child(n+3) {
+    display: none;
+  }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS\tela-inicial.css">
+    <title>SellMART</title>
+</head>
+<body>
+    <header>
+        <div class="header-topo">
+            <div class="hamburguer-icon">
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+            </div>
+            <div class="logo">
+                <img src="/img/logotipo.svg" alt="logotipo" style="width: 184px; height: 34px;">
+            </div>
+            <div class="barra-pesquisa">
+                <input type="text" name="txtBusca" id="txtBusca" placeholder="Sua busca começa aqui">
+                <img src="/img/Search-Outline.svg" alt="search-icon" class="search-icon">
+            </div>
+            <div class="links-header">
+                <a href="#" class="profile-icon"><img src="/img/profile.svg" alt="profile-icon"></a>
+                <a href="#" class="curtida-icon"><img src="/img/curtidos.svg" alt="curtida-icon"></a>
+                <a href="#" class="carrinho-icon"><img src="/img/carrinho.svg" alt="carrinho-icon"></a>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div class="menu-superior">
+            <div class="menu-superior-botoes">
+                
+                    <!-- <div class="btnCategorias" onclick="click()"> -->
+                    <div id="categorias" class="hidden">
+                        <ul>
+                            <li><a href="#">Hardware</a></li>
+                            <li><a href="#">Periféricos</a></li>
+                            <li><a href="#">Computadores</a></li>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Celular & Smartphone</a></li>
+                            <li><a href="#">Tv</a></li>
+                            <li><a href="#">Áudio</a></li>
+                            <li><a href="#">Projetores</a></li>
+                            <li><a href="#">Espaço Gamer</a></li>
+                            <li><a href="#">Escritório</a></li>
+                            <li><a href="#">Casa Inteligente</a></li>
+                            <li><a href="#">Tablets, iPad e E-readers</a></li>
+                            <li><a href="#">Câmeras e Drones</a></li>
+                            <li><a href="#">Energia</a></li>
+                            <li><a href="#">Conectividade</a></li>
+                            <li><a href="#">Geek</a></li>
+                            <li><a href="#">Eletrodomésticos</a></li>
+                            <li><a href="#">Eletroportáteis</a></li>
+                            <li><a href="#">Ar e Ventilação</a></li>
+                            <li><a href="#">Segurança</a></li>
+                            <li><a href="#">Automação</a></li>
+                            <li><a href="#">Telefonia Fixa</a></li>
+                            <li><a href="#">Robótica</a></li>
+                            <li><a href="#">Serviços Digitais</a></li>
+                            <li><a href="#">Benefício</a></li>
+                            <li><a href="#">Moda</a></li>
+                            <li><a href="#">Ferramentas</a></li>
+                            <li><a href="#">Cuidados Pessoais</a></li>
+                            
+                        </ul>
+                    </div>
+                        <!-- <img src="/img/categorias-icon.svg" alt="categorias-icon">
+                        <span>Todas as categorias</span> -->
+                    <!-- </div> -->
+                <nav class="nav-menu">
+                    <button id="btnCategorias"><img src="/img/hamburguer-icon.svg" alt="categorias-icon" onclick="click()"> Todas as categorias</button> 
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Ofertas do dia</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Celulares</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Computadores</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Eletrodomésticos</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Smart TV</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Monitores</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Esportes & lazer</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Gamer</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">FRETE GRÁTIS</a>
+                    
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    
+    <main>
+        <div class="flex">
+            <div class="img-carrossel">
+                <img src="/img/black-friday.jpg" alt="descontos-img" style="width: 1216px; height: 400px;">
+            </div>
+
+            <span id="text-promocoes">PROMOÇÕES DO DIA</span>
+
+            <div class="todos-cards">
+                <div class="cards">
+                    <input type="button" value="&lsaquo;" class="btnSeta" id="priv">
+                    <div class="card">
+                        <div class="frete">
+                            <span>Frete Grátis</span> <img src="/img/caminhao-icon.svg" alt="caminhao-icon" class="caminhao">
+                        </div>
+                        <img src="/img/monitor-gamer.png" alt="monitor" class="monitor">
+                        <p class="link-produto"><a href="/HTML/tela-produto.html">Monitor Gamer! GAMING GP900 27", 240hz, Full HD, 1ms, DisplayPort e HDMI, 96% SRGB, Adaptive Sync, Ajuste De Altura - KGMG70027PT</a></p>
+                        <span class="valor">R$ 999,99</span>
+                        <span class="forma-pgt">Á Vista</span>
+                        <input id="btnCarrinho" type="button" value="Adicionar no carrinho">
+                    </div>
+                    <div class="card">
+                        <div class="frete">
+                            <span>Frete Grátis</span> <img src="/img/caminhao-icon.svg" alt="caminhao-icon" class="caminhao">
+                        </div>
+                        <img src="/img/monitor-gamer.png" alt="monitor" class="monitor">
+                        <p class="link-produto"><a href="/HTML/tela-produto.html">Monitor Gamer! GAMING GP900 27", 240hz, Full HD, 1ms, DisplayPort e HDMI, 96% SRGB, Adaptive Sync, Ajuste De Altura - KGMG70027PT</a></p>
+                        <span class="valor">R$ 999,99</span>
+                        <span class="forma-pgt">Á Vista</span>
+                        <input id="btnCarrinho" type="button" value="Adicionar no carrinho">
+                    </div>
+                    <div class="card">
+                        <div class="frete">
+                            <span>Frete Grátis</span> <img src="/img/caminhao-icon.svg" alt="caminhao-icon" class="caminhao">
+                        </div>
+                        <img src="/img/monitor-gamer.png" alt="monitor" class="monitor">
+                        <p class="link-produto"><a href="/HTML/tela-produto.html">Monitor Gamer! GAMING GP900 27", 240hz, Full HD, 1ms, DisplayPort e HDMI, 96% SRGB, Adaptive Sync, Ajuste De Altura - KGMG70027PT</a></p>
+                        <span class="valor">R$ 999,99</span>
+                        <span class="forma-pgt">Á Vista</span>
+                        <input id="btnCarrinho" type="button" value="Adicionar no carrinho">
+                    </div>
+                    <div class="card">
+                        <div class="frete">
+                            <span>Frete Grátis</span> <img src="/img/caminhao-icon.svg" alt="caminhao-icon" class="caminhao">
+                        </div>
+                        <img src="/img/monitor-gamer.png" alt="monitor" class="monitor">
+                        <p class="link-produto"><a href="/HTML/tela-produto.html">Monitor Gamer! GAMING GP900 27", 240hz, Full HD, 1ms, DisplayPort e HDMI, 96% SRGB, Adaptive Sync, Ajuste De Altura - KGMG70027PT</a></p>
+                        <span class="valor">R$ 999,99</span>
+                        <span class="forma-pgt">Á Vista</span>
+                        <input id="btnCarrinho" type="button" value="Adicionar no carrinho">
+                    </div>
+                    <input type="button" value="&rsaquo;" class="btnSeta" id="next">
+                </div>
+            </div>
+
+            <!-- <div class="todos-cards">
+                <div class="cards">
+                    <input type="button" value="&lsaquo;" class="btnSeta">
+                    <div class="card-1">
+                        <div class="frete">
+                            <span>Frete Grátis</span> <img src="/img/caminhao-icon.svg" alt="caminhao-icon" class="caminhao">
+                        </div>
+                        <img src="/img/monitor.png" alt="monitor" class="monitor">
+                        <p class="link-produto"><a href="/HTML/tela-produto.html">Monitor Gamer! GAMING GP900 27", 240hz, Full HD, 1ms, DisplayPort e HDMI, 96% SRGB, Adaptive Sync, Ajuste De Altura - KGMG70027PT</a></p>
+                        <span class="valor">R$ 999,99</span>
+                        <span class="forma-pgt">Á Vista</span>
+                        <input id="btnCarrinho" type="button" value="Adicionar no carrinho">
+                    </div>
+                    <div class="card-2">
+                        <div class="frete">
+                            <span>Frete Grátis</span> <img src="/img/caminhao-icon.svg" alt="caminhao-icon" class="caminhao">
+                        </div>
+                        <img src="/img/monitor.png" alt="monitor" class="monitor">
+                        <p class="link-produto"><a href="/HTML/tela-produto.html">Monitor Gamer! GAMING GP900 27", 240hz, Full HD, 1ms, DisplayPort e HDMI, 96% SRGB, Adaptive Sync, Ajuste De Altura - KGMG70027PT</a></p>
+                        <span class="valor">R$ 999,99</span>
+                        <span class="forma-pgt">Á Vista</span>
+                        <input id="btnCarrinho" type="button" value="Adicionar no carrinho">
+                    </div>
+                    <div class="card-3">
+                        <div class="frete">
+                            <span>Frete Grátis</span> <img src="/img/caminhao-icon.svg" alt="caminhao-icon" class="caminhao">
+                        </div>
+                        <img src="/img/monitor.png" alt="monitor" class="monitor">
+                        <p class="link-produto"><a href="/HTML/tela-produto.html">Monitor Gamer! GAMING GP900 27", 240hz, Full HD, 1ms, DisplayPort e HDMI, 96% SRGB, Adaptive Sync, Ajuste De Altura - KGMG70027PT</a></p>
+                        <span class="valor">R$ 999,99</span>
+                        <span class="forma-pgt">Á Vista</span>
+                        <input id="btnCarrinho" type="button" value="Adicionar no carrinho">
+                    </div>
+                    <div class="card-4">
+                        <div class="frete">
+                            <span>Frete Grátis</span> <img src="/img/caminhao-icon.svg" alt="caminhao-icon" class="caminhao">
+                        </div>
+                        <img src="/img/monitor.png" alt="monitor" class="monitor">
+                        <p class="link-produto"><a href="/HTML/tela-produto.html">Monitor Gamer! GAMING GP900 27", 240hz, Full HD, 1ms, DisplayPort e HDMI, 96% SRGB, Adaptive Sync, Ajuste De Altura - KGMG70027PT</a></p>
+                        <span class="valor">R$ 999,99</span>
+                        <span class="forma-pgt">Á Vista</span>
+                        <input id="btnCarrinho" type="button" value="Adicionar no carrinho">
+                    </div>
+                    <input type="button" value="&rsaquo;" class="btnSeta">
+                </div>
+            </div> -->
+        </div>
+    </main>
+
+    <script src="/JavaScript/tela-inicial.js"></script>
+
+</body>
+</html>
+
+

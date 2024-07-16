@@ -1,0 +1,434 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #F8F8F8;
+    z-index: -2;
+}
+
+.header-topo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 16px 0;
+    max-width: 1216px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .icon {
+    display: none;
+  }
+  
+  .barra-pesquisa {
+    position: relative;
+    width: 608px;
+  }
+  
+  #txtBusca {
+    width: 100%;
+    height: 48px;
+    padding: 15px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e0e0e0;
+    /* background-color: #F0F2F5; */
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* pointer-events: none; */
+    cursor: pointer;
+  }
+  
+  ::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #AAAAAA;
+  }
+  
+  .links-header {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
+
+hr {
+    width: 100%;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #D9D9D9;
+}
+
+.menu-superior {
+    width: 100%;
+    height: 40px;
+}
+
+.menu-superior-botoes {
+    max-width: 1216px;
+    height: 40px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+
+.nav-menu, .nav-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.nav-menu a:hover {
+    background-color: #fd4848;
+    color: white;
+}
+
+#btnCategorias {
+    width: 216px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+}
+
+button {
+    background-color: #f8f8f8;
+}
+
+.selected {
+    background-color: #fd4848;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#categorias {
+    background-color: white;
+    width: 524px;
+    height: 448px;
+    z-index: 2;
+    position: absolute;
+    top: 121px;
+    left: 359px;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 262px 262px;
+}
+
+ul li {
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    max-width: 262px;
+    height: 32px;
+    padding-left: 8px
+}
+
+a:hover {
+    background-color: #fd4848;
+    color: white;
+}
+
+/* .btnCategorias span {
+    margin-left: 8px;
+    margin-right: 32px;
+}
+
+.btnCategorias img {
+    width: 16px;
+    height: 12px;
+} */
+
+.barra-separacao-menu {
+    width: 1px;
+    height: 20px;
+    background-color: #d9d9d9;
+}
+
+.nav-menu a {
+    padding: 0 12px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    height: 40px;
+}
+
+.nossos-produtos {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+} 
+
+.produto {
+    width: 100%;
+    max-width: 1216px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img-produto {
+    width: 100%;
+    max-width: 608px;
+    display: flex;
+    justify-content: center;
+}
+
+.descricao-produto {
+    max-width: 608px;
+    width: 100%;
+}
+
+.info-produto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-produto span {
+    font-size: 12px;
+    color: #65676B;
+}
+
+.info {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.texto-produto {
+    width: 100%;
+    max-width: 608px;
+}
+
+.texto-produto h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.texto-produto p {
+    font-size: 16px;
+}
+
+.produto img {
+    margin: 8px 0;
+}
+
+.vendido-estoque {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.vendido-estoque span {
+    font-size: 14px;
+}
+
+.vendido {
+    color: #65676B;
+}
+
+.estoque {
+    color: #fd4848;
+    font-weight: 600;
+}
+
+.preco span {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #999;
+}
+
+.avista {
+    font-size: 40px;
+    color: #fd4848;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.cartao {
+    font-size: 14px;
+    color: #65676B;
+}
+
+.botoes {
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.botoes button {
+    width: 100%;
+    max-width: 300px;
+    height: 48px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btnComprar {
+    background-color: #fd4848;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.btnCarrinho {
+    background-color: #F8F8F8;
+    border: 1px solid #fd4848;
+    color: #fd4848;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.divisao {
+    margin: 32px auto;
+    width: 1216px;
+}
+
+.descricao {
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+.especificacao-produto h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.especificacao-produto p {
+    font-size: 16px;
+    color: #65676B;
+}
+
+.principais-caracteristicas {
+    margin-top: 32px;
+} 
+
+.principais-caracteristicas h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.principais-caracteristicas p {
+    font-size: 16px;
+    color: #65676B;
+    padding-bottom: 8px;
+}
+
+
+@media screen and (max-width: 1216px){
+    html {
+        padding: 0 16px;
+    }
+    
+    .nav-menu a {
+        display: none;
+      }
+
+    #btnCategorias {
+        display: none;
+    }
+    
+    .barra-separacao-menu {
+        display: none;
+    }
+
+    .icon {
+        width: 18px;
+        height: 2px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4px;
+        background-color: black;
+        border-radius: 100px;
+    }
+
+    .barra-pesquisa {
+        width: 100%;
+        margin-top: 16px;
+        order: 2;
+    }
+
+    .profile-icon, .curtida-icon {
+        display: none;
+    }
+
+    .links-header {
+        gap: 0;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 944px) {
+    .header-topo {
+      padding: 0 16px;
+    }
+  
+    .links-header {
+      gap: 0;
+    }
+  
+    .profile-icon, .curtida-icon {
+      display: none;
+    }
+  
+    .barra-pesquisa {
+      width: 100%;
+      order: 2;
+    }
+  }
+
+@media screen and (max-width: 768px) {
+    html {
+        padding: 16px 16px;
+    }
+
+    .descricao {
+        display: none;
+    }
+
+    .nossos-produtos {
+        margin-top: 0;
+    }
+
+    .produto {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .botoes button {
+        width: 100%;
+        max-width: 343px;
+    }
+  }

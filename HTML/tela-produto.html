@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/tela-produto.css">
+    <title>SellMART</title>
+</head>
+<body>
+    <header>
+        <div class="header-topo">
+            <div class="hamburguer-icon">
+                <div class="icon"></div>
+                <div class="icon"></div>
+                <div class="icon"></div>
+            </div>
+            <div class="logo">
+                <img src="/img/logotipo.svg" alt="logotipo" style="width: 184px; height: 34px;">
+            </div>
+            <div class="barra-pesquisa">
+                <input type="text" name="txtBusca" id="txtBusca" placeholder="Sua busca começa aqui">
+                <img src="/img/Search-Outline.svg" alt="search-icon" class="search-icon">
+            </div>
+            <div class="links-header">
+                <a href="#" class="profile-icon"><img src="/img/profile.svg" alt="profile-icon"></a>
+                <a href="#" class="curtida-icon"><img src="/img/curtidos.svg" alt="curtida-icon"></a>
+                <a href="#" class="carrinho-icon"><img src="/img/carrinho.svg" alt="carrinho-icon"></a>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div class="menu-superior">
+            <div class="menu-superior-botoes">
+                
+                    <!-- <div class="btnCategorias" onclick="click()"> -->
+                    <div id="categorias" class="hidden">
+                        <ul>
+                            <li><a href="#">Hardware</a></li>
+                            <li><a href="#">Periféricos</a></li>
+                            <li><a href="#">Computadores</a></li>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Celular & Smartphone</a></li>
+                            <li><a href="#">Tv</a></li>
+                            <li><a href="#">Áudio</a></li>
+                            <li><a href="#">Projetores</a></li>
+                            <li><a href="#">Espaço Gamer</a></li>
+                            <li><a href="#">Escritório</a></li>
+                            <li><a href="#">Casa Inteligente</a></li>
+                            <li><a href="#">Tablets, iPad e E-readers</a></li>
+                            <li><a href="#">Câmeras e Drones</a></li>
+                            <li><a href="#">Energia</a></li>
+                            <li><a href="#">Conectividade</a></li>
+                            <li><a href="#">Geek</a></li>
+                            <li><a href="#">Eletrodomésticos</a></li>
+                            <li><a href="#">Eletroportáteis</a></li>
+                            <li><a href="#">Ar e Ventilação</a></li>
+                            <li><a href="#">Segurança</a></li>
+                            <li><a href="#">Automação</a></li>
+                            <li><a href="#">Telefonia Fixa</a></li>
+                            <li><a href="#">Robótica</a></li>
+                            <li><a href="#">Serviços Digitais</a></li>
+                            <li><a href="#">Benefício</a></li>
+                            <li><a href="#">Moda</a></li>
+                            <li><a href="#">Ferramentas</a></li>
+                            <li><a href="#">Cuidados Pessoais</a></li>
+                            
+                        </ul>
+                    </div>
+                        <!-- <img src="/img/categorias-icon.svg" alt="categorias-icon">
+                        <span>Todas as categorias</span> -->
+                    <!-- </div> -->
+                <nav class="nav-menu">
+                    <button id="btnCategorias"><img src="/img/hamburguer-icon.svg" alt="categorias-icon" onclick="click()"> Todas as categorias</button> 
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Ofertas do dia</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Celulares</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Computadores</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Eletrodomésticos</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Smart TV</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Monitores</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Esportes & lazer</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">Gamer</a>
+                    <div class="barra-separacao-menu"></div>
+                    <a href="#">FRETE GRÁTIS</a>
+                    
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="nossos-produtos">
+            <div class="produto">
+                <div class="img-produto">
+                    <img src="/img/monitor-gamer-2.png" alt="monitor-img">
+                </div>
+                <div class="descricao-produto">
+                    <div class="info-produto">
+                        <span class="info">Ver mais informações do produto</span>
+                        <span>(Cód. do produto: 12345)</span>
+                    </div>
+                    <div class="texto-produto">
+                        <h1><strong>MONITOR GAMER</strong></h1>
+                        <p>Monitor Gamer! GAMING GP900 27", 240hz, Full HD, 1ms, DisplayPort e HDMI, 96% SRGB, Adaptive Sync, Ajuste De Altura - KGMG70027PT</p>
+                    </div>
+                    <img src="/img/star.svg" alt="star-icon">
+                    <div class="vendido-estoque">
+                        <span class="vendido">Vendido e entregue por:<strong style="color:black">SellMart</strong></span>
+                        <span class="estoque">Em estoque</span>
+                    </div>
+                    <div class="preco">
+                        <span>1.499,99</span>
+                        <p class="avista">R$ 999,99</p>
+                        <p class="cartao"> <strong style="color: black;">R$ 1.319,88</strong> <br> Em até 12x sem juros</p>
+                    </div>
+                    <div class="botoes">
+                        <button class="btnComprar">Comprar</button>
+                        <button class="btnCarrinho">Adicionar ao carrinho</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <hr class="divisao">
+
+        <div class="descricao">
+            <div class="especificacao-produto">
+                <h1>Especificação do produto</h1>
+                <p>Descubra a experiência visual definitiva com o Monitor UltraWide ZMX-3200. Com uma tela curva de 32 polegadas e resolução QHD (2560x1440), este monitor proporciona imagens nítidas e cores vibrantes que trazem cada detalhe à vida. O design elegante e sem bordas oferece um visual moderno e imersivo, perfeito para jogos, filmes e produtividade.</p>
+            </div>
+            <div class="principais-caracteristicas">
+                <h1>Principais características</h1>
+                <p><strong style="color: black;">Tela Curva de 32 polegadas:</strong> Envolva-se completamente na ação com uma tela ampla e curva que oferece uma experiência de visualização panorâmica.</p>
+                <p><strong style="color: black;">Resolução QHD:</strong>  Desfrute de imagens cristalinas e detalhadas com uma resolução de 2560x1440 pixels.</p>
+                <p><strong style="color: black;">Texa de Atualização de 144Hz:</strong> Tenha uma jogabilidade suave e sem interrupções, ideal para jogos de ação rápida.</p>
+                <p><strong style="color: black;">Tecnologia FreeSync:</strong> Sincronize a taxa de atualização do monitor com sua placa de vídeo para eliminar rasgos na tela e proporcionar uma experiência de jogo fluida.</p>
+                <p><strong style="color: black;">Conectividade Versátil:</strong> Inclui portas HDMI, DisplayPort e USB-C para que você possa conectar facilmente seus dispositivos preferidos.</p>
+                <p><strong style="color: black;">Design Ergonômico:</strong> Base ajustável em altura e inclinação para garantir conforto durante longas sessões de uso.</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+<script src="/JavaScript/tela-inicial.js"></script>
+</html>
